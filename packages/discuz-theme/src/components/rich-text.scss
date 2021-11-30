@@ -527,6 +527,13 @@ $link-color-actived: $primary-color2;
       }
     }
 
+    .#{$namespace}-code .#{$namespace}-code__divider {
+      display: block;
+      + .#{$namespace}-code__divider {
+        height: 16px;
+      }
+    }
+
     .#{$namespace}-pre .#{$namespace}-code {
       color: #3AC15F;
       display: block;
