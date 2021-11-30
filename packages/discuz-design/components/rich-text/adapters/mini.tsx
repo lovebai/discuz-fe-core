@@ -59,7 +59,16 @@ export const RichTextMiniAdapter = {
    */
   parseCodeContent(node) {
     const codeString = this.adapter.getNodeText(node);
-    const highlightedHTML = hljs.highlightAuto(codeString).value;
+
+    // 在hljs处理之前，使用临时标记替换代码块内容的回车换行符
+    const sign = `:sign-${Date.now()}:`;
+    const _codeString = codeString.replace(/\r|\n/g, sign);
+
+    const _highlightedHTML = hljs.highlightAuto(_codeString).value;
+
+    // hljs处理之后，把回车换行符标记替换为带类名的view标签，用于小程序代码块保持换行
+    const highlightedHTML = _highlightedHTML.replace(new RegExp(sign, 'g'), '<view class="dzq-code__divider"></view>');
+
     const highlightedNodes = htmlparser2.parseDOM(highlightedHTML, {
       decodeEntities: true,
     });
