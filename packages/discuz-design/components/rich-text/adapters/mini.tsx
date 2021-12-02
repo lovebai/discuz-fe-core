@@ -274,6 +274,7 @@ export const RichTextMiniAdapter = {
       if (originType === 'a') {
         console.log('no link click', targetNode, e);
         this.onLinkClick(targetNode, e);
+        e && e.stopPropagation();
       }
 
       this.onClick(e, targetNode);
