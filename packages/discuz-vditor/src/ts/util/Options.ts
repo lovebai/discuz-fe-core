@@ -67,6 +67,10 @@ export class Options {
           "bold",
           "italic",
           "strike",
+          "|",
+          "upload",
+          "table",
+          "link",
         ],
         toolbar: [
             "emoji",
