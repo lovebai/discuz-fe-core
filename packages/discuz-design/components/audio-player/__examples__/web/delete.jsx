@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { AudioPlayer, Toast } from '@discuzq/design';
+import { AudioPlayer, Toast } from '@discuzqfe/design';
 
 const audioPlayerList = [
   {

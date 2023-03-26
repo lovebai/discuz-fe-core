@@ -61,9 +61,9 @@ const appEntry = [path.resolve(SITE_ROOT, "app")];
 
 const alias = {
   "@app": path.resolve(SITE_ROOT, "app"),
-  "@discuzq/design": COMPONENT_ROOT,
-  "@discuzq/sdk": SDK_ROOT,
-  "@discuzq/cli": CLI_ROOT,
+  "@discuzqfe/design": COMPONENT_ROOT,
+  "@discuzqfe/sdk": SDK_ROOT,
+  "@discuzqfe/cli": CLI_ROOT,
   "@discuz/plugin-center": PLUGIN_CENTER_ROOT,
   "@babel/runtime": path.resolve(__dirname, "./node_modules/@babel/runtime"),
   react: path.resolve("./node_modules/react"),

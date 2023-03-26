@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Input, Button } from '@discuzq/design';
+import { Input, Button } from '@discuzqfe/design';
 
 export default function Example1() {
   const [value, setValue] = useState('');

@@ -1,6 +1,6 @@
 const path = require('path');
 const fs = require('fs');
-const initPluginStroe = require('@discuzq/discuz-plugin-loader/initStroe');
+const initPluginStroe = require('@discuzqfe/discuz-plugin-loader/initStroe');
 const {MINI_PLUGIN_DIR_NAME, MINI_PLUGIN_CONFIG_PATH} = require('../../constants');
 const deleteDir = require('../deleteDir');
 const infoLog = require('../console/infoLog');

@@ -1,5 +1,5 @@
 import React from "react";
-import { Divider, Flex } from '@discuzq/design';
+import { Divider, Flex } from '@discuzqfe/design';
 import "./index.scss";
 
 const { Row, Col } = Flex;

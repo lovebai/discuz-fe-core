@@ -1,5 +1,5 @@
 import React from "react";
-import { Checkbox } from '@discuzq/design';
+import { Checkbox } from '@discuzqfe/design';
 
 export default function CheckboxExample() {
   return (

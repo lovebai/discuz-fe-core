@@ -1,5 +1,5 @@
 import React from 'react';
-import { RichText } from '@discuzq/design';
+import { RichText } from '@discuzqfe/design';
 
 const html = `
 <code>\n 代码片段\n GRANT RELOAD ON *.* TO \'bellen\'@\'%\';\n </code>

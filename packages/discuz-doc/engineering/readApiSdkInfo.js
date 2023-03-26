@@ -47,7 +47,7 @@ files.forEach(file => {
 
         const fileImportName = lodash.camelCase(path.posix.basename(file, '.js'));
 
-        const importFile = file.replace(SDK_PATH, '@discuzq/sdk');
+        const importFile = file.replace(SDK_PATH, '@discuzqfe/sdk');
 
 
         API_SDK_MAP[requestMethod.toLowerCase() + ':' + parsedUrl] = {

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Audio, Toast, Button } from '@discuzq/design';
+import { Audio, Toast, Button } from '@discuzqfe/design';
 import { audioUrl1 } from './constant';
 
 const errorUrl = 'https://mp3.9ku.com/hot/2004/07-17/41813.mp3';

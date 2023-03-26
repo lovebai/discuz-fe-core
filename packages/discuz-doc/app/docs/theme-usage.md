@@ -440,8 +440,8 @@ page {
  * 入口初始样式
  **/
 @import './theme/index.scss'; // 引入自己自定义的主题文件
-@import '@discuzq/theme/src/components.scss'; // 所有组件样式
-@import '@discuzq/theme/src/animations.scss'; // 所有动画样式
+@import '@discuzqfe/theme/src/components.scss'; // 所有组件样式
+@import '@discuzqfe/theme/src/animations.scss'; // 所有动画样式
 ```
 
 #### 2）使用 IDE 的全局搜索替换功能进行文件替换
@@ -512,8 +512,8 @@ iii) 然后全局进行变量的替换即可：将 `color: $white` 替换为 `co
  * 入口初始样式
  **/
 @import './theme/index.scss'; // 引入自己自定义的主题文件
-@import '@discuzq/theme/src/components.scss'; // 所有组件样式
-@import '@discuzq/theme/src/animations.scss'; // 所有动画样式
+@import '@discuzqfe/theme/src/components.scss'; // 所有组件样式
+@import '@discuzqfe/theme/src/animations.scss'; // 所有动画样式
 @import './index.scss';
 
 .normal-badge .badge__circle {
@@ -563,7 +563,7 @@ $dark: (
 * 主题的 mixin 方法，主要是输出不同主题的对应的 css 变量
 * themify($themes, $style: 'dzq-theme') // 第一个参数传入定义的主题，第二个参数传入定义的样式类的前缀，可以直接使用默认的，这样就不用更改项目了。
 */
-@import '@discuzq/theme/src/mixins/_themify.scss';
+@import '@discuzqfe/theme/src/mixins/_themify.scss';
 /**
 * 引入自己自定义或者修改的主题。
 * 从 mini 或者 web 目录下面的 node_modules/discuzq/theme/src/theme

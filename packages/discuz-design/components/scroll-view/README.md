@@ -9,7 +9,7 @@ web 端使用的是第三方组件：[react-virtualized](https://github.com/bvau
 ## web 示例
 
 ### 基本使用
-> 通过 `@discuzq/design` 引用 `ScrollView` 组件，通过自定义设置属性，完成列表的实现
+> 通过 `@discuzqfe/design` 引用 `ScrollView` 组件，通过自定义设置属性，完成列表的实现
 
 [Example: 基本使用](./__examples__/web/base.tsx)
 

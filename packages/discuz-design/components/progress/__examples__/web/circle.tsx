@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Progress } from '@discuzq/design';
+import { Progress } from '@discuzqfe/design';
 
 export default function ProgressExample() {
   const [percent, setPercent] = useState(0);

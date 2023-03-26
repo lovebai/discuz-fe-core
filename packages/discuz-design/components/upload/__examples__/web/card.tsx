@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Toast, Button, Icon, Upload } from '@discuzq/design';
+import { Toast, Button, Icon, Upload } from '@discuzqfe/design';
 
 function ProgressRender(props) {
   const { file } = props;

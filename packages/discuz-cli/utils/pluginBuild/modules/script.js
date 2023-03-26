@@ -12,7 +12,7 @@ module.exports = ( config ) => {
   rules.push( {
     test: /\.(js|jsx|mjs)$/,
     include: [
-      // /node_modules\/\@discuzq\/design/,
+      // /node_modules\/\@discuzqfe\/design/,
       path.resolve(process.cwd(), 'src')
     ],
     use: [

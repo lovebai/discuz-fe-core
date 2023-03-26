@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Switch, Button } from '@discuzq/design';
+import { Switch, Button } from '@discuzqfe/design';
 
 export default function SwitchExample() {
   const [checked, isChecked] = useState(false);

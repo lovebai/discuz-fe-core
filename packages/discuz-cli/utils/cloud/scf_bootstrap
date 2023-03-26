@@ -2,7 +2,7 @@
 
 const { execSync } = require('child_process');
 const path = require('path');
-const cmdPath = path.resolve(process.cwd(), './web/node_modules/@discuzq/cli');
+const cmdPath = path.resolve(process.cwd(), './web/node_modules/@discuzqfe/cli');
 const env = require('./env.json');
 try {
 

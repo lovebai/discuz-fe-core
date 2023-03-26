@@ -19,7 +19,7 @@ dzq-cli是基于[Taro](https://taro-docs.jd.com/taro/docs/README)和[Next](https
 ## 安装
 
 ```bash
-npm install @discuzq/cli -g
+npm install @discuzqfe/cli -g
 ```
 
 ## 

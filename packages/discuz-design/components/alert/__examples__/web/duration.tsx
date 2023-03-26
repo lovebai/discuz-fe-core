@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { Alert, Button } from '@discuzq/design';
+import { Alert, Button } from '@discuzqfe/design';
 
 export default function AlertExample() {
   const [duration, setDuration] = useState(0);

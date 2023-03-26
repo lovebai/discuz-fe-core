@@ -48,12 +48,12 @@ $ npm run dev:next
 2. demo 测试
 > 目前可以使用 `npm link` 的方式来模拟真正的引入方式进行本地的测试
 1）在项目根目录中运行命令：`npm link`
-2）在 `examples` 中的项目中关联引用本地开发的库：`npm link @discuzq/sdk`
+2）在 `examples` 中的项目中关联引用本地开发的库：`npm link @discuzqfe/sdk`
 3）在代码中进行包引入，例如：
 
 ```javascript
 // 可以使用 `npm link` 的方式来模拟真正的引入方式进行本地的测试
-import { getForum } from '@discuzq/sdk/dist/api/forum/get-forum';
+import { getForum } from '@discuzqfe/sdk/dist/api/forum/get-forum';
 // 也可以直接使用本地路径的方式来引入
 // import { getForum } from '../../../src/api'
 ```

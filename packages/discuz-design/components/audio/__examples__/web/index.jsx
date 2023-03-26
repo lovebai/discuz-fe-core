@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Audio } from '@discuzq/design';
+import { Audio } from '@discuzqfe/design';
 import { audioUrl1 } from './constant';
 
 export default function FlexExample() {

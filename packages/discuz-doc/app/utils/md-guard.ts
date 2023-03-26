@@ -2,7 +2,7 @@ import {
   ComponentDocument,
   ExampleNode,
   InterfaceNode,
-} from "!!toc-loader!@discuzq/design/../README.md";
+} from "!!toc-loader!@discuzqfe/design/../README.md";
 
 export type MarkdownNode = ComponentDocument["blocks"] extends (infer T)[]
   ? T

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { PullToRefresh } from '@discuzq/design';
+import { PullToRefresh } from '@discuzqfe/design';
 
 export default function PullToRefreshExample() {
   const [refresh, setRefresh] = useState(true);

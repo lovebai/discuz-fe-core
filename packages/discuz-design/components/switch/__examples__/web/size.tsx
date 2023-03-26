@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch } from '@discuzq/design';
+import { Switch } from '@discuzqfe/design';
 
 export default function SwitchExample() {
   return (

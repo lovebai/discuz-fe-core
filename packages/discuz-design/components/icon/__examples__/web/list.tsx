@@ -1,5 +1,5 @@
 import React from 'react';
-import { Icon, Card, Flex, Toast } from '@discuzq/design';
+import { Icon, Card, Flex, Toast } from '@discuzqfe/design';
 import './list.scss';
 import layouts from '../../../../styles/index.scss';
 

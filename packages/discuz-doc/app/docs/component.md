@@ -6,21 +6,21 @@ smart & powerful
 
 ## 安装
 ```
-npm i @discuzq/design -S
+npm i @discuzqfe/design -S
 ```
 
 ## 引用
 
 ### 全量引用
 ```
-import { Button } from '@discuzq/design';
-import '@discuzq/design/dist/styles/index.scss';
+import { Button } from '@discuzqfe/design';
+import '@discuzqfe/design/dist/styles/index.scss';
 ```
 
 ### 按需组件引用
 ```
-import Button from '@discuzq/design/dist/components/button';
-import '@discuzq/design/dist/components/button/styles/index.scss';
+import Button from '@discuzqfe/design/dist/components/button';
+import '@discuzqfe/design/dist/components/button/styles/index.scss';
 ```
 
 ### babel 按需引用插件支持
@@ -28,7 +28,7 @@ import '@discuzq/design/dist/components/button/styles/index.scss';
 需要在项目中安装按需引用 babel 插件
 
 ```
-npm i @discuzq/discuz-babel-plugin-import --save
+npm i @discuzqfe/discuz-babel-plugin-import --save
 ```
 
 在 web 项目的 .babelrc 文件中配置如下
@@ -36,9 +36,9 @@ npm i @discuzq/discuz-babel-plugin-import --save
 ```
 plugins: [
     [
-      "@discuzq/discuz-babel-plugin-import",
+      "@discuzqfe/discuz-babel-plugin-import",
       {
-        "libraryName": "@discuzq/design",
+        "libraryName": "@discuzqfe/design",
         "libraryDirectory": "dist/components"
       }
     ]
@@ -50,9 +50,9 @@ plugins: [
 ```
 plugins: [
     [
-      "@discuzq/discuz-babel-plugin-import",
+      "@discuzqfe/discuz-babel-plugin-import",
       {
-        "libraryName": "@discuzq/design",
+        "libraryName": "@discuzqfe/design",
         "libraryDirectory": "dist-pure/components"
       }
     ]

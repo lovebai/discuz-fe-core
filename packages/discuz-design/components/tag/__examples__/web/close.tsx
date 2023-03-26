@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Tag, Button } from '@discuzq/design';
+import { Tag, Button } from '@discuzqfe/design';
 import './index.scss';
 
 export default function TagExample() {

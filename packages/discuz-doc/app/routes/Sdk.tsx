@@ -8,7 +8,7 @@ import ChangeLogDoc from "@app/docs/changelog.md";
 import toc, {
   Component as TeaComponent,
   Category,
-} from "!!toc-loader?importRoot=@discuzq/sdk/!@discuzq/sdk/README.md";
+} from "!!toc-loader?importRoot=@discuzqfe/sdk/!@discuzqfe/sdk/README.md";
 import { DocumentMainContent } from "@app/components/DocumentMainContent";
 import ReactMarkdown from "react-markdown";
 

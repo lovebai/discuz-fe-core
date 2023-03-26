@@ -1,4 +1,4 @@
-import { Button } from '@discuzq/design';
+import { Button } from '@discuzqfe/design';
 import React from 'react';
 import './index.scss';
 

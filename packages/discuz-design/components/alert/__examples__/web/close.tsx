@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Alert, Button } from '@discuzq/design';
+import { Alert, Button } from '@discuzqfe/design';
 
 export default function AlertExample() {
   const [cut, isCut] = useState(false);

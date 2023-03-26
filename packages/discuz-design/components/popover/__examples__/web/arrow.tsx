@@ -1,5 +1,5 @@
 import React from "react";
-import { Popover, Avatar } from '@discuzq/design';
+import { Popover, Avatar } from '@discuzqfe/design';
 
 export default function Example() {
   return (

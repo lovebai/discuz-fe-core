@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Popup, Button } from '@discuzq/design';
+import { Popup, Button } from '@discuzqfe/design';
 import "./index.scss";
 
 export default function PopupExample() {

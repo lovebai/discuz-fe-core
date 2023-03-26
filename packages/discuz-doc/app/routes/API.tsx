@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Menu, Tag, Toast } from '@discuzq/design';
+import { Menu, Tag, Toast } from '@discuzqfe/design';
 const SwaggerParser = require("@apidevtools/swagger-parser");
 import JSONSchemaView from 'json-schema-view-js';
 import 'json-schema-view-js/dist/style.min.css';

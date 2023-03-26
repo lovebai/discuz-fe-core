@@ -1,5 +1,5 @@
 {
-  "name": "@discuzq/theme",
+  "name": "@discuzqfe/theme",
   "version": "1.0.32",
   "description": "Discuz! Q 公共样式库",
   "main": "dist/index.css",

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Video } from '@discuzq/design';
+import { Video } from '@discuzqfe/design';
 
 export default function BaseVideo() {
   return (
@@ -9,7 +9,7 @@ export default function BaseVideo() {
         width={400}
         height={400}
       />
-      <p style={{ margin: '10px 0' }}>通过 @discuzq/design/dist/components/video 引用 Video 组件，使用 src 属性设置视频的资源地址</p>
+      <p style={{ margin: '10px 0' }}>通过 @discuzqfe/design/dist/components/video 引用 Video 组件，使用 src 属性设置视频的资源地址</p>
     </div>
   );
 }

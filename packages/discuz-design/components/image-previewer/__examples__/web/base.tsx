@@ -1,4 +1,4 @@
-import { ImagePreviewer } from '@discuzq/design';
+import { ImagePreviewer } from '@discuzqfe/design';
 import React, { useEffect } from 'react';
 
 const urls1 = [

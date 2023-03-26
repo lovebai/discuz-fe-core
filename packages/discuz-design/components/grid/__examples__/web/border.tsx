@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid } from '@discuzq/design';
+import { Grid } from '@discuzqfe/design';
 
 export default function GridExample() {
   const data = [

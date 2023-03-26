@@ -1,4 +1,4 @@
-import { Button, Icon } from '@discuzq/design';
+import { Button, Icon } from '@discuzqfe/design';
 import React from 'react';
 
 export default function Base() {

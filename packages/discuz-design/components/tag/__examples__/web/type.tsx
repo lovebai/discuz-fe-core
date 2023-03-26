@@ -1,5 +1,5 @@
 import React from 'react';
-import { Tag, Divider } from '@discuzq/design';
+import { Tag, Divider } from '@discuzqfe/design';
 import './index.scss';
 
 export default function TagExample() {

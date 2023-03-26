@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = (list) => {
-    const DZQ_PLUGIN_CENTER_TEMPLATE = `import DZQPluginCenter from '@discuzq/plugin-center'\n`;
+    const DZQ_PLUGIN_CENTER_TEMPLATE = `import DZQPluginCenter from '@discuzqfe/plugin-center'\n`;
     let str = DZQ_PLUGIN_CENTER_TEMPLATE;
     if (list) {
         for ( let i = 0; i < list.length; i++ ) {

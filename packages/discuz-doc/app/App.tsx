@@ -1,5 +1,5 @@
 import React from 'react';
-import { BackToTop, Button, Icon } from '@discuzq/design'
+import { BackToTop, Button, Icon } from '@discuzqfe/design'
 import { HashRouter } from 'react-router-dom';
 import Index from './routes/Index';
 

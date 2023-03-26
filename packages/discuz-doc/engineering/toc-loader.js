@@ -45,7 +45,7 @@ function tocLoader(source) {
 
   const { mode = 'toc' } = options || {};
 
-  const { importRoot = '@discuzq/design/../' } = options || {};
+  const { importRoot = '@discuzqfe/design/../' } = options || {};
 
   // eslint-disable-next-line newline-per-chained-call
   const tocSource = source.split(TOC_START).pop().split(TOC_END).shift();

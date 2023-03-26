@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { Toast, Button, Icon, Upload } from '@discuzq/design';
+import { Toast, Button, Icon, Upload } from '@discuzqfe/design';
 
 export default function UploadExample() {
   const post = (file, list, updater) => new Promise((relsove) => {

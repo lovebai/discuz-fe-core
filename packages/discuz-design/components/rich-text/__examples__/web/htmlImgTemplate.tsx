@@ -1,4 +1,4 @@
-import { RichText, Button } from '@discuzq/design';
+import { RichText, Button } from '@discuzqfe/design';
 import React from 'react';
 
 const imghtml = `

@@ -19,9 +19,9 @@ module.exports = () => {
         ],
         plugins: [
             [
-                require.resolve("@discuzq/discuz-babel-plugin-import"),
+                require.resolve("@discuzqfe/discuz-babel-plugin-import"),
                 {
-                  "libraryName": "@discuzq/design",
+                  "libraryName": "@discuzqfe/design",
                   "libraryDirectory": "dist-pure/components"
                 }
             ],

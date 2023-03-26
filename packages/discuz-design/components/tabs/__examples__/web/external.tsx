@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Tabs, Button, Icon } from '@discuzq/design';
+import { Tabs, Button, Icon } from '@discuzqfe/design';
 
 const tabList = [
   // id, label, badge, icon

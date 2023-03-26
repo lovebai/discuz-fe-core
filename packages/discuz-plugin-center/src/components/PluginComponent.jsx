@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
 import isServer from '../is-server';
-import {router} from '@discuzq/sdk/dist';
-import Request from '@discuzq/sdk/dist/api/_example';
-import { handleError } from '@discuzq/sdk/dist/api/utils/handle-error';
+import {router} from '@discuzqfe/sdk/dist';
+import Request from '@discuzqfe/sdk/dist/api/_example';
+import { handleError } from '@discuzqfe/sdk/dist/api/utils/handle-error';
 
 export default class PluginComponent extends Component {
 

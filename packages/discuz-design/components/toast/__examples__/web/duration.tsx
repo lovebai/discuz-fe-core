@@ -1,5 +1,5 @@
 import React from "react";
-import { Toast, Button } from '@discuzq/design';
+import { Toast, Button } from '@discuzqfe/design';
 
 export default function Example1() {
   return (

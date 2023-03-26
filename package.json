@@ -1,5 +1,5 @@
 {
-  "name": "@discuzq/core",
+  "name": "@discuzqfe/core",
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "publish:alpha": "lerna publish --dist-tag alpha",
@@ -11,9 +11,9 @@
     "commit": "git add . && cz",
     "preinstall": "npm i commitizen eslint -g",
     "build": "lerna run build",
-    "dependencies1": "lerna add @discuzq/discuz-plugin-loader --scope=@discuzq/cli",
-    "dependencies2": "lerna add @discuzq/discuz-babel-plugin-import --scope=@discuzq/cli",
-    "dependencies3": "lerna add @discuzq/sdk --scope=@discuzq/plugin-center"
+    "dependencies1": "lerna add @discuzqfe/discuz-plugin-loader --scope=@discuzqfe/cli",
+    "dependencies2": "lerna add @discuzqfe/discuz-babel-plugin-import --scope=@discuzqfe/cli",
+    "dependencies3": "lerna add @discuzqfe/sdk --scope=@discuzqfe/plugin-center"
   },
   "husky": {
     "hooks": {}

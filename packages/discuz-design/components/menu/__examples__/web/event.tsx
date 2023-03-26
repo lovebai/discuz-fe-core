@@ -1,4 +1,4 @@
-import { Menu, Card } from '@discuzq/design';
+import { Menu, Card } from '@discuzqfe/design';
 import React, { useState } from 'react';
 
 function title(name = '导航') {

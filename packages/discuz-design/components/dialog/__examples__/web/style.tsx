@@ -1,4 +1,4 @@
-import { Dialog, Button } from '@discuzq/design';
+import { Dialog, Button } from '@discuzqfe/design';
 import React, { useState } from "react";
 import "./index.scss";
 

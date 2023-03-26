@@ -1,5 +1,5 @@
 {
-  "name": "@discuzq/sdk",
+  "name": "@discuzqfe/sdk",
   "version": "1.0.54",
   "description": "discuz dsk",
   "main": "index.js",

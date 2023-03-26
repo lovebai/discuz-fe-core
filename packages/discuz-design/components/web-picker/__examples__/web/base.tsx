@@ -1,4 +1,4 @@
-import { WebPicker } from '@discuzq/design';
+import { WebPicker } from '@discuzqfe/design';
 import React from 'react';
 
 export default class App extends React.Component {

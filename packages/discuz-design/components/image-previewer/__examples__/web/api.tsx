@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Button, ImagePreviewer } from '@discuzq/design';
+import { Button, ImagePreviewer } from '@discuzqfe/design';
 
 const urls2 = [
   'https://www.hualigs.cn/image/60f68a503f5a8.jpg',

@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import { Type, TypeDisplay } from './Type';
 import MarkdownView from './MarkdownView';
 import HeadingAnchor from './HeadingAnchor';
-import allDoc from '!!props-loader!@discuzq/design/../tsconfig.json';
+import allDoc from '!!props-loader!@discuzqfe/design/../tsconfig.json';
 
 const GIT_BLOB_SRC = 'https://gitee.com/Discuz/discuz-core/tree/master/packages/discuz-design';
 

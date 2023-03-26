@@ -1,5 +1,5 @@
 import React from 'react';
-import { Alert } from '@discuzq/design';
+import { Alert } from '@discuzqfe/design';
 
 export default function AlertExample() {
   return (

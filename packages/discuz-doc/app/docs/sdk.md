@@ -7,5 +7,5 @@ SDK 实现了跨三端的 API调用、基础能力 抽象
 
 ## 安装
 ```sh
-npm install @discuzq/sdk -S
+npm install @discuzqfe/sdk -S
 ```

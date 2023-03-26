@@ -8,7 +8,7 @@ const withDZQ = (nextConfig = {}) => Object.assign({}, nextConfig, {
   alias: () => ({
     react: path.resolve(__dirname, './node_modules/react'),
     'react-dom': path.resolve(__dirname, './node_modules/react-dom'),
-    '@discuzq/design': path.resolve(__dirname, '../../components')
+    '@discuzqfe/design': path.resolve(__dirname, '../../components')
   }),
   webpack(config) {
     /**
@@ -20,11 +20,11 @@ const withDZQ = (nextConfig = {}) => Object.assign({}, nextConfig, {
 
     // eslint-disable-next-line no-param-reassign
     config.resolve.alias = Object.assign({}, config.resolve.alias, {
-      '@discuzq/design': path.resolve(__dirname, '../../components')
+      '@discuzqfe/design': path.resolve(__dirname, '../../components')
     });
     // eslint-disable-next-line no-param-reassign
     config.resolveLoader.alias = Object.assign({}, config.resolveLoader.alias, {
-      '@discuzq/design': path.resolve(__dirname, '../../components')
+      '@discuzqfe/design': path.resolve(__dirname, '../../components')
     });
 
     /**

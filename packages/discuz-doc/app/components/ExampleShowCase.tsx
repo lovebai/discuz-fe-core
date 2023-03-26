@@ -1,5 +1,5 @@
 import React, {useEffect, useRef, useState} from 'react';
-import { Icon } from '@discuzq/design';
+import { Icon } from '@discuzqfe/design';
 import hljs from 'highlight.js/lib/core';
 import 'highlight.js/styles/github.css';
 

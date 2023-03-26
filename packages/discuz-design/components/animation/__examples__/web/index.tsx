@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, Animation } from '@discuzq/design';
+import { Button, Animation } from '@discuzqfe/design';
 
 export default function AnimationExample() {
   const [action, setAction] = useState(true);

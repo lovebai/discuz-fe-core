@@ -1,4 +1,4 @@
-import { Toast, Button } from '@discuzq/design';
+import { Toast, Button } from '@discuzqfe/design';
 import React from "react";
 
 export default function Example1() {

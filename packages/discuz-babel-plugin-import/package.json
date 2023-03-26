@@ -1,5 +1,5 @@
 {
-  "name": "@discuzq/discuz-babel-plugin-import",
+  "name": "@discuzqfe/discuz-babel-plugin-import",
   "version": "0.0.1",
   "main": "index.js",
   "license": "MIT",

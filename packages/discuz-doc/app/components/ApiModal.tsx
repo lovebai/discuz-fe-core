@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ReactDOM from 'react-dom';
-import { Button, Dialog } from '@discuzq/design';
+import { Button, Dialog } from '@discuzqfe/design';
 
 /**
  * API 的方式唤起一个对话框

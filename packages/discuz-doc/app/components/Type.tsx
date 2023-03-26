@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { show } from './ApiModal';
 import ApiDoc from './ApiDoc';
-import allDoc from '!!props-loader!@discuzq/design/../tsconfig.json';
+import allDoc from '!!props-loader!@discuzqfe/design/../tsconfig.json';
 
 // import { Bubble } from '@app/../../tdesign-component/src';
 

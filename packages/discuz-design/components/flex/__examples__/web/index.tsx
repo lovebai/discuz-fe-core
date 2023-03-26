@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flex } from '@discuzq/design';
+import { Flex } from '@discuzqfe/design';
 import './index.scss';
 
 const { Row, Col } = Flex;

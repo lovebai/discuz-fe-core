@@ -1,4 +1,4 @@
-import { Card } from '@discuzq/design';
+import { Card } from '@discuzqfe/design';
 import React from 'react';
 import './index.scss';
 

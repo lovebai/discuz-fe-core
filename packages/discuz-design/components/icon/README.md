@@ -9,7 +9,7 @@
 
 
 ### 基本用法
-> 通过 `@discuzq/design` 引用 `Icon` 组件，通过 `name` 属性设置不同的内置 `Icon` 组件。
+> 通过 `@discuzqfe/design` 引用 `Icon` 组件，通过 `name` 属性设置不同的内置 `Icon` 组件。
 
 [Example: 基本用法](./__examples__/web/index.tsx)
 

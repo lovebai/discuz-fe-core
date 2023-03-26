@@ -6,7 +6,7 @@ declare module '*.md' {
   export default value;
 }
 
-declare module '!!toc-loader!@discuzq/design/../README.md' {
+declare module '!!toc-loader!@discuzqfe/design/../README.md' {
   import { UNIST } from 'unist';
 
   export interface Category {
@@ -52,4 +52,4 @@ declare module '!!toc-loader!@discuzq/design/../README.md' {
   export default value;
 }
 
-declare module '!!props-loader!@discuzq/design/../tsconfig.json' {}
+declare module '!!props-loader!@discuzqfe/design/../tsconfig.json' {}

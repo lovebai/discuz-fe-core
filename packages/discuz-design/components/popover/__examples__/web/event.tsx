@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Popover, Button } from '@discuzq/design';
+import { Popover, Button } from '@discuzqfe/design';
 
 export default function Example() {
   const [text, setText] = useState("popover 事件");

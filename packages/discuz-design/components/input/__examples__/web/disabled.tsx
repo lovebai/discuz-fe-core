@@ -1,4 +1,4 @@
-import { Input } from '@discuzq/design';
+import { Input } from '@discuzqfe/design';
 import React, { useState } from "react";
 
 export default function Example1() {

@@ -3,7 +3,7 @@
 
 ## 使用方式
 ```
-import Router from '@discuzq/sdk/dist/router';
+import Router from '@discuzqfe/sdk/dist/router';
 
 Router.push({ url: '' })
 ```

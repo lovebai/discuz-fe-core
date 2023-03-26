@@ -1,5 +1,5 @@
 {
-  "name": "@discuzq/plugin-center",
+  "name": "@discuzqfe/plugin-center",
   "version": "2.0.15",
   "description": "> TODO: description",
   "author": "LLLLLamHo <linhao.4zhong@163com>",
@@ -18,7 +18,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@gitee.com:Discuz/discuz-core.git"
+    "url": "https://gitee.com/lovebai/discuz-fe-core"
   },
   "scripts": {
     "build": "gulp build"
@@ -46,6 +46,6 @@
     "gulp-sourcemaps": "3.0.0"
   },
   "dependencies": {
-    "@discuzq/sdk": "^1.0.54"
+    "@discuzqfe/sdk": "^1.0.54"
   }
 }

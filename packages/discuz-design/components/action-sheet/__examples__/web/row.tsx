@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, ActionSheet } from '@discuzq/design';
+import { Button, ActionSheet } from '@discuzqfe/design';
 
 export default function ActionSheetExample() {
   const [visible, setVisible] = useState(false)

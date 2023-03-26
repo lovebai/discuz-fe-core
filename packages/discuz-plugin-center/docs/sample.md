@@ -138,7 +138,7 @@ export default pluginComponent.default;
 adapter/web/index.jsx（浏览器）
 ```javascript
 import React from 'react';
-import { Icon, Dialog, Button, Input } from '@discuzq/design';
+import { Icon, Dialog, Button, Input } from '@discuzqfe/design';
 
 export default class CustomIfram extends React.PureComponent {
     constructor(props) {
@@ -196,7 +196,7 @@ export default class CustomIfram extends React.PureComponent {
 adapter/mini/index.jsx （小程序）
 ```javascript
 import React from 'react';
-import { Icon, Dialog, Button, Input } from '@discuzq/design';
+import { Icon, Dialog, Button, Input } from '@discuzqfe/design';
 import { View } from '@tarojs/components';
 
 export default class CustomIfram extends React.PureComponent {
@@ -298,7 +298,7 @@ export default pluginComponent.default;
 adapter/web/index.jsx（浏览器）
 ```javascript
 import React from 'react';
-import { Icon, Dialog, Button, Input } from '@discuzq/design';
+import { Icon, Dialog, Button, Input } from '@discuzqfe/design';
 
 export default class CustomIframPostContent extends React.PureComponent {
     constructor(props) {
@@ -337,7 +337,7 @@ export default class CustomIframPostContent extends React.PureComponent {
 adapter/mini/index.jsx （小程序）
 ```javascript
 import React from 'react';
-import { Icon, Dialog, Button, Input } from '@discuzq/design';
+import { Icon, Dialog, Button, Input } from '@discuzqfe/design';
 import { View, Text } from '@tarojs/components';
 
 export default class CustomIframPostContent extends React.PureComponent {

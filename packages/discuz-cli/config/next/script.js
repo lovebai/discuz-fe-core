@@ -11,12 +11,12 @@ module.exports = (config, options) => {
     test: /\.(tsx|ts|js|mjs|jsx)$/,
     include: [
       path.resolve(cwd),
-      path.resolve(cwd, 'node_modules/@discuzq/plugin-center'),
+      path.resolve(cwd, 'node_modules/@discuzqfe/plugin-center'),
       path.resolve(cwd, '../common')
     ],
     use: [
       {
-        loader: '@discuzq/discuz-plugin-loader',
+        loader: '@discuzqfe/discuz-plugin-loader',
         options: {
           enforce: 'pre',
           pluginPath: null,
@@ -28,7 +28,7 @@ module.exports = (config, options) => {
   config.module.rules.unshift({
     test: /\.(tsx|ts|js|mjs|jsx)$/,
     include: [
-      path.resolve(cwd, 'node_modules/@discuzq/plugin-center'),
+      path.resolve(cwd, 'node_modules/@discuzqfe/plugin-center'),
       path.resolve(cwd, '../common')
     ],
     use: options.defaultLoaders.script,

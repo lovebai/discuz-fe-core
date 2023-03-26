@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { Video, Button } from '@discuzq/design';
+import { Video, Button } from '@discuzqfe/design';
 
 export default function BaseVideo() {
   const [message, setMessage] = useState([]);

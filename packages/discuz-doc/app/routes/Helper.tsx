@@ -6,7 +6,7 @@ import MarkdownView from '@app/components/MarkdownView';
 import HelperDoc from '@app/docs/helper.md';
 import ChangeLogDoc from '@app/docs/changelog.md';
 import HelperPlugin from '@app/docs/helper-plugin.md';
-import toc, { Component as TeaComponent, Category } from '!!toc-loader?importRoot=@discuzq/cli/!@discuzq/cli/README.md';
+import toc, { Component as TeaComponent, Category } from '!!toc-loader?importRoot=@discuzqfe/cli/!@discuzqfe/cli/README.md';
 import { DocumentMainContent } from '@app/components/DocumentMainContent';
 
 const componentMap = new Map<string, TeaComponent>();

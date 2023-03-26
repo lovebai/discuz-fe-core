@@ -246,7 +246,7 @@ function markdownToFragment(source, directory, importStatements) {
       } else if (interface) {
         // [Interface: xxxProps](./path-to-componment/name-to-componment.tsx)
         addImport("import { ApiDoc } from '@app/components/ApiDoc';");
-        addImport("import propsDoc from '!!props-loader!@discuzq/design/../tsconfig.json';");
+        addImport("import propsDoc from '!!props-loader!@discuzqfe/design/../tsconfig.json';");
 
         const interfacePath = interface.path
           .replace(/\\/g, '/')

@@ -1,4 +1,4 @@
-import { Divider } from '@discuzq/design';
+import { Divider } from '@discuzqfe/design';
 import React from "react";
 
 export default function Base() {

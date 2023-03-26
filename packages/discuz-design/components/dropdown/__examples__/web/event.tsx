@@ -1,4 +1,4 @@
-import { Dropdown } from '@discuzq/design';
+import { Dropdown } from '@discuzqfe/design';
 import React from 'react';
 
 function menu() {

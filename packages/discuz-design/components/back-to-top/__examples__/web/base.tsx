@@ -1,5 +1,5 @@
 import React from 'react';
-import { BackToTop, Button } from '@discuzq/design';
+import { BackToTop, Button } from '@discuzqfe/design';
 
 const BackToTopExample = () => (
   <div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Button, Icon } from '@discuzq/design';
+import { Card, Button, Icon } from '@discuzqfe/design';
 
 function header() {
   return <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', color: '#8590A6' }}>

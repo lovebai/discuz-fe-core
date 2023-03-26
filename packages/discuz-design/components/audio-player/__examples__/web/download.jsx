@@ -1,5 +1,5 @@
 import React from "react";
-import { AudioPlayer, Toast } from '@discuzq/design';
+import { AudioPlayer, Toast } from '@discuzqfe/design';
 
 export default function FlexExample() {
   const onDownload = () => {

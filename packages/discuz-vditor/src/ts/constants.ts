@@ -22,8 +22,8 @@ export abstract class Constants {
         "makefile", "markdown", "nginx", "objectivec", "php", "perl", "properties", "python", "ruby", "sql", "shell",
         "dart", "erb", "go", "gradle", "julia", "kotlin", "less", "lua", "matlab", "rust", "scss", "typescript", "ts",
       "yaml"];
-  // https://www.jsdelivr.com/package/npm/@discuzq/vditor 设置可以cdn的文件
-    public static readonly CDN = `https://cdn.jsdelivr.net/npm/@discuzq/vditor@${VDITOR_VERSION}`;
+  // https://www.jsdelivr.com/package/npm/@discuzqfe/vditor 设置可以cdn的文件
+    public static readonly CDN = `https://cdn.jsdelivr.net/npm/@discuzqfe/vditor@${VDITOR_VERSION}`;
     public static readonly MARKDOWN_OPTIONS = {
         autoSpace: false,
         codeBlockPreview: true,

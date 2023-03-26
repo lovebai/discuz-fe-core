@@ -1,5 +1,5 @@
 import React from 'react';
-import { Check } from '@discuzq/design';
+import { Check } from '@discuzqfe/design';
 
 export default function CheckExample() {
   return (

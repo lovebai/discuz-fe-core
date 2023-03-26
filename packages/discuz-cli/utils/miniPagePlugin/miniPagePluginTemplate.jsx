@@ -4,7 +4,7 @@ import React from 'react';
 import Page from '@components/page';
 import { View } from '@tarojs/components';
 import { inject, observer } from 'mobx-react';
-import DZQPluginCenterInjection from '@discuzq/plugin-center/dist/components/DZQPluginCenterInjection';
+import DZQPluginCenterInjection from '@discuzqfe/plugin-center/dist/components/DZQPluginCenterInjection';
 
 // 插件插槽埋入
 /**DZQ->plugin->register<plugin_system@add_page_hook@<@pluginName@>:<@path@>>**/

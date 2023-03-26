@@ -1,5 +1,5 @@
 import React from 'react';
-import { Tag } from '@discuzq/design';
+import { Tag } from '@discuzqfe/design';
 
 export default function TagExample() {
   const onClose = () => {

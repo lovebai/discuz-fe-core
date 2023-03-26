@@ -1,5 +1,5 @@
 import React from 'react';
-import { Avatar } from '@discuzq/design';
+import { Avatar } from '@discuzqfe/design';
 
 export default function AvatarExample() {
   return (

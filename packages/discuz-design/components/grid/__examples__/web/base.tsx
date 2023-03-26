@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid } from '@discuzq/design';
+import { Grid } from '@discuzqfe/design';
 import './index.scss';
 
 export default function GridExample() {

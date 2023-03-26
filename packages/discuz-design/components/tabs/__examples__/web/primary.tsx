@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Tabs } from '@discuzq/design';
+import { Tabs } from '@discuzqfe/design';
 
 const tabList: [string, string][] = [
   // id, label, badge, icon

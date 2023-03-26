@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Checkbox } from '@discuzq/design';
+import { Checkbox } from '@discuzqfe/design';
 
 export default function CheckboxExample() {
   const [items, setItems] = useState([]);

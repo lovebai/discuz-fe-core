@@ -19,7 +19,7 @@ module.exports = (webpackChain) => {
             dzqPluginLoader: {
               test: /\.(js|jsx)$/,
               use: [{
-                loader: '@discuzq/discuz-plugin-loader',
+                loader: '@discuzqfe/discuz-plugin-loader',
                 options: {
                   enforce: 'pre',
                   include: [

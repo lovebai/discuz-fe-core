@@ -3,7 +3,7 @@
 ## 使用
 
 ```javascript
-import LocalBridge from '@discuzq/sdk/lib/localstorage';
+import LocalBridge from '@discuzqfe/sdk/lib/localstorage';
 
 const ls = new LocalBridge();
 ls.set('user', 'angelzou');

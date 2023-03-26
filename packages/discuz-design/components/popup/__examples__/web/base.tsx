@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Popup, Button, Radio, Toast } from '@discuzq/design';
+import { Popup, Button, Radio, Toast } from '@discuzqfe/design';
 import { WebPopupProps } from '../../interface';
 import './index.scss';
 

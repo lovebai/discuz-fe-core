@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Audio, Toast, Button } from '@discuzq/design';
+import { Audio, Toast, Button } from '@discuzqfe/design';
 import { audioUrl1 } from './constant';
 
 const errorUrl = 'https://demo.dj63.com//2016/串烧舞曲/20150101/佛山DJ宅神[磁性_男声_女声]歌曲连版串烧[专辑1].mp3';

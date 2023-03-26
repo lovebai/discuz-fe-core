@@ -1,6 +1,6 @@
 # 插件配置
 
-通过`@discuzq/cli`初始化插件时，会配置一个基本的插件配置文件`config.json`。
+通过`@discuzqfe/cli`初始化插件时，会配置一个基本的插件配置文件`config.json`。
 
 ```json
 {
@@ -55,7 +55,7 @@
 > 其中如果type是1，那么filter_enable字段将生效，用于筛选时是否出现对应的筛选条件
 
 ### app_id
-通过`@discuzq/cli`生成的唯一id，请勿手动修改。
+通过`@discuzqfe/cli`生成的唯一id，请勿手动修改。
 
 ### version
 插件版本。默认是1.0.0。
@@ -74,7 +74,7 @@
 
 ### view
 
-插件配置信息，以`@discuzq/cli`生成的`config.json`为例。
+插件配置信息，以`@discuzqfe/cli`生成的`config.json`为例。
 
 ```json
 {"view": {

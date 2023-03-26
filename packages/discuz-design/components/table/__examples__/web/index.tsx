@@ -1,5 +1,5 @@
 import React from 'react';
-// import { Table } from '@discuzq/design';
+// import { Table } from '@discuzqfe/design';
 import Table from '../../index';
 
 

@@ -1,4 +1,4 @@
-// import {deleteDeny} from '@discuzq/sdk/dist/api/user/delete-deny';
+// import {deleteDeny} from '@discuzqfe/sdk/dist/api/user/delete-deny';
 import { handleError } from '../utils/handle-error';
 import request from '../_example';
 

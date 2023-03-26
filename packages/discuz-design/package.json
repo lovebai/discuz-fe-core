@@ -1,5 +1,5 @@
 {
-  "name": "@discuzq/design",
+  "name": "@discuzqfe/design",
   "version": "1.1.7",
   "description": "> TODO: description",
   "author": "",
@@ -20,7 +20,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@gitee.com:Discuz/discuz-core.git"
+    "url": "https://gitee.com/lovebai/discuz-fe-core"
   },
   "scripts": {
     "pre-install": "cd site/web && tnpm i && cd ../mini && tnpm i",

@@ -21,7 +21,7 @@
 ## 安装
 
 ```bash
-npm install @discuzq/cli
+npm install @discuzqfe/cli
 ```
 
 <!--<ComponentTOC>-->

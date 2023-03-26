@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Popover, Button } from '@discuzq/design';
+import { Popover, Button } from '@discuzqfe/design';
 
 export default function Example() {
   const [trigger, setTrigger] = useState<"click" | "hover">("click");

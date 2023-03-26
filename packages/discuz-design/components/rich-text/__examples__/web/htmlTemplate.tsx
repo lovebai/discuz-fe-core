@@ -1,4 +1,4 @@
-import { RichText } from '@discuzq/design';
+import { RichText } from '@discuzqfe/design';
 import React from 'react';
 
 const html = `

@@ -33,7 +33,7 @@ import { Button } from '@discuz/discuz-design';
 // import '@discuz/discuz-design/dist/styles/index.scss';
 // 20210805：请看 discuz-theme 项目，组件库里面的样式将会全部移动到 theme 项目中。 不要了
 
-import '@discuzq/theme';
+import '@discuzqfe/theme';
 ```
 
 ### 按需组件引用
@@ -42,8 +42,8 @@ import Button from '@discuz/discuz-design/dist/components/button';
 // import '@discuz/discuz-design/dist/components/button/styles/index.scss'; 不要了
 
 // 20210805：请看 discuz-theme 项目，组件库里面的样式将会全部移动到 theme 项目中。
-import '@discuzq/theme/dist/theme/index.css'; /* 主题文件，必须引用，只用引用一次 */
-import '@discuzq/theme/dist/componnets/button.css';
+import '@discuzqfe/theme/dist/theme/index.css'; /* 主题文件，必须引用，只用引用一次 */
+import '@discuzqfe/theme/dist/componnets/button.css';
 ```
 
 ### 按需引用

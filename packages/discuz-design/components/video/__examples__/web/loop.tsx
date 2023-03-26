@@ -1,5 +1,5 @@
 import React from 'react';
-import { Video } from '@discuzq/design';
+import { Video } from '@discuzqfe/design';
 
 export default function BaseVideo() {
   return (

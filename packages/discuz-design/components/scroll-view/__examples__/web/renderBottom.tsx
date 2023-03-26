@@ -3,7 +3,7 @@ import Parser from 'react-html-parser';
 import mock from '../mock';
 import Item from './item';
 import s9e from '../s9e';
-import { ScrollView } from '@discuzq/design';
+import { ScrollView } from '@discuzqfe/design';
 
 const initData = (data) => {
   data.map((item) => {

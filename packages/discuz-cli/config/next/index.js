@@ -49,7 +49,7 @@ module.exports = (fn) => {
       nextConfig.optimization.splitChunks.cacheGroups = Object.assign(nextConfig.optimization.splitChunks.cacheGroups, {
         // commons: { name: 'commons', minChunks: 5, priority: 0, reuseExistingChunk: true },
         // discuzq: {
-        //   test: /[\\/]node_modules[\\/]@discuzq[\\/]/,
+        //   test: /[\\/]node_modules[\\/]@discuzqfe[\\/]/,
         //   minChunks: 1,
         //   reuseExistingChunk: true,
         //   priority: 60,

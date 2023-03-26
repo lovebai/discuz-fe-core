@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import Parser from 'react-html-parser';
-import { ScrollView } from '@discuzq/design';
+import { ScrollView } from '@discuzqfe/design';
 import mock from '../mock';
 import Item from './item';
 import s9e from '../s9e';

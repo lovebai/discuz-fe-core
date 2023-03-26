@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Tabs } from '@discuzq/design';
+import { Tabs } from '@discuzqfe/design';
 import './index.scss'
 
 const tabList: [string, string][] = [

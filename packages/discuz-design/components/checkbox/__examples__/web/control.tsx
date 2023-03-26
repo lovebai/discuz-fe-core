@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Checkbox, Button } from '@discuzq/design';
+import { Checkbox, Button } from '@discuzqfe/design';
 
 export default function CheckboxExample() {
   const [checked, setChecked] = useState(true);

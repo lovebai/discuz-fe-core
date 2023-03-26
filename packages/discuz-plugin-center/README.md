@@ -14,8 +14,8 @@
 
 ## 环境要求
 当前项目依赖必须满足以下条件
-- @discuzq/cli版本必须 >= 1.1.6
-- @discuzq/discuz-plugin-loader版本必须 >= 1.0.3
+- @discuzqfe/cli版本必须 >= 1.1.6
+- @discuzqfe/discuz-plugin-loader版本必须 >= 1.0.3
 
 ## 开发环境
 - node版本建议使用14.x的版本

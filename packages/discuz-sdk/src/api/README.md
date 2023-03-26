@@ -7,7 +7,7 @@
 ```javascript
 // 现在只是一个例子，还有很多需要完善
 // 引入想要的 api
-import { apiIns } from '@discuzq/sdk/lib/api';
+import { apiIns } from '@discuzqfe/sdk/lib/api';
 
 // 实例化请求，传的参数是 axios request config 的配置
 const api = apiIns({

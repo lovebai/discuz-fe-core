@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Checkbox, Divider } from '@discuzq/design';
+import { Checkbox, Divider } from '@discuzqfe/design';
 
 export default function CheckboxExample() {
   const CheckboxGroup = Checkbox.Group;

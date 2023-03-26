@@ -1,5 +1,5 @@
 import React from 'react';
-import { Badge, Button } from '@discuzq/design';
+import { Badge, Button } from '@discuzqfe/design';
 
 export default function BadgeExample() {
   return (

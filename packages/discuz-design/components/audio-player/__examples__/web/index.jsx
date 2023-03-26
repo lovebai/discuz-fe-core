@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { AudioPlayer } from '@discuzq/design';
+import { AudioPlayer } from '@discuzqfe/design';
 
 export default function FlexExample() {
   const [src, setSrc] = useState('../test.mp3');

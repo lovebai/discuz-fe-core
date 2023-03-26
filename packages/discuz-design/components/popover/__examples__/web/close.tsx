@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { Popover, Button } from '@discuzq/design';
+import { Popover, Button } from '@discuzqfe/design';
 
 export default function Example() {
   const popoverCloseRef = useRef(null);

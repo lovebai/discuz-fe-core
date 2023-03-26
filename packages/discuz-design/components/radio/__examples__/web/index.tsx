@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Radio } from '@discuzq/design';
+import { Radio } from '@discuzqfe/design';
 
 export default function RadioExample() {
   const [item, setItem] = useState(null);
