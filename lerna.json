@@ -31,7 +31,7 @@
     "create": {
       "license": "MIT",
       "registry": "https://registry.npmjs.org/",
-      "homepage": "https://gitee.com/Discuz/discuz-core"
+      "homepage": "https://gitee.com/lovebai/discuz-fe-core"
     }
   },
   "version": "independent"
