@@ -4,7 +4,7 @@ import MarkdownView from './MarkdownView';
 import HeadingAnchor from './HeadingAnchor';
 import allDoc from '!!props-loader!@discuzqfe/design/../tsconfig.json';
 
-const GIT_BLOB_SRC = 'https://gitee.com/Discuz/discuz-core/tree/master/packages/discuz-design';
+const GIT_BLOB_SRC = 'https://gitee.com/lovebai/discuz-fe-core/tree/master/packages/discuz-design';
 
 interface Doc {
   comment: any;

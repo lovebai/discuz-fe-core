@@ -30,7 +30,7 @@ module.exports = {
         },
         // {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://gitee.com/Discuz/discuz-core',
+          href: 'https://gitee.com/lovebai/discuz-fe-core',
           label: 'Gitee',
           position: 'right',
         },
@@ -70,7 +70,7 @@ module.exports = {
             // },
             {
               label: 'Gitee',
-              href: 'https://gitee.com/Discuz/discuz-core',
+              href: 'https://gitee.com/lovebai/discuz-fe-core',
             },
           ],
         },

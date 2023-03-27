@@ -3,7 +3,7 @@
   "version": "2.0.15",
   "description": "> TODO: description",
   "author": "LLLLLamHo <linhao.4zhong@163com>",
-  "homepage": "https://gitee.com/Discuz/discuz-core",
+  "homepage": "https://gitee.com/lovebai/discuz-fe-core",
   "license": "MIT",
   "main": "dist/index.js",
   "types": "types/index.d.ts",
