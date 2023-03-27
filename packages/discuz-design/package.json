@@ -22,6 +22,10 @@
     "type": "git",
     "url": "https://gitee.com/lovebai/discuz-fe-core"
   },
+    "publishConfig": {
+      "access": "public",
+      "registry": "https://registry.npmjs.org/"
+    },
   "scripts": {
     "pre-install": "cd site/web && tnpm i && cd ../mini && tnpm i",
     "test": "echo \"Error: no test specified\" && exit 1",

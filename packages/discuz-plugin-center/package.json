@@ -20,6 +20,10 @@
     "type": "git",
     "url": "https://gitee.com/lovebai/discuz-fe-core"
   },
+    "publishConfig": {
+      "access": "public",
+      "registry": "https://registry.npmjs.org/"
+    },
   "scripts": {
     "build": "gulp build"
   },

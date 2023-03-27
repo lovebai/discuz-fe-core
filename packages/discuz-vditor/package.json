@@ -17,6 +17,10 @@
   "dependencies": {
     "diff-match-patch": "1.0.5"
   },
+    "publishConfig": {
+      "access": "public",
+      "registry": "https://registry.npmjs.org/"
+    },
   "types": "dist/index.d.ts",
   "devDependencies": {
     "@babel/core": "7.10.4",

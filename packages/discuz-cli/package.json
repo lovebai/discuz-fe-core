@@ -16,6 +16,10 @@
     "type": "git",
     "url": "https://gitee.com/lovebai/discuz-fe-core"
   },
+    "publishConfig": {
+      "access": "public",
+      "registry": "https://registry.npmjs.org/"
+    },
   "scripts": {
     "lint": "eslint -c .eslintrc.js ./ --ext .js,.jsx",
     "lint:fix": "eslint -c .eslintrc.js ./ --ext .js,.jsx --fix",

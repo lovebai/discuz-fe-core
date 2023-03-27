@@ -40,6 +40,10 @@
     "utils"
   ],
   "author": "angelzou",
+    "publishConfig": {
+      "access": "public",
+      "registry": "https://registry.npmjs.org/"
+    },
   "devDependencies": {
     "@babel/cli": "7.12.10",
     "@babel/core": "7.12.13",

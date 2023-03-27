@@ -9,5 +9,9 @@
   },
   "devDependencies": {
     "babel-cli": "^6.26.0"
-  }
+  },
+  "publishConfig": {
+      "access": "public",
+      "registry": "https://registry.npmjs.org/"
+    }
 }
