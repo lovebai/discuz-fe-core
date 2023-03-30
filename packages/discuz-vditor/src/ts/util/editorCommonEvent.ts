@@ -228,7 +228,7 @@ export const hotkeyEvent = (vditor: IVditor, editorElement: HTMLElement) => {
 
 export const selectEvent = (vditor: IVditor, editorElement: HTMLElement) => {
   function bubble() {
-    if (vditor.options.toolbarConfig.bubbleHide) return;
+    if (vditor.options.toolbarConfig.bubbleHide) { return; }
     const selectText = getSelectText(vditor[vditor.currentMode].element);
     if (vditor.options.select && selectText) {
       vditor.options.select(selectText);

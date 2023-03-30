@@ -31,7 +31,7 @@ export class Hint {
         currentLineValue = range.startContainer.textContent.substring(0, range.startOffset) || "";
         const key = this.getKey(currentLineValue, vditor.options.hint.extend);
         if (typeof key === "undefined") {
-            if ({}.toString.call(vditor.options.hint.hide) === '[object Function]') vditor.options.hint.hide();
+            if ({}.toString.call(vditor.options.hint.hide) === "[object Function]") { vditor.options.hint.hide(); }
             this.element.style.display = "none";
             clearTimeout(this.timeId);
         } else {
@@ -59,9 +59,9 @@ export class Hint {
                     if (item.key === this.splitChar) {
                         clearTimeout(this.timeId);
                         this.timeId = window.setTimeout(() => {
-                          if (item.hint && Array.isArray(item.hint(key))) this.genHTML(item.hint(key), key, vditor);
+                          if (item.hint && Array.isArray(item.hint(key))) { this.genHTML(item.hint(key), key, vditor); }
                           // 自定义提示方法
-                          if ({}.toString.call(item.hintCustom) === '[object Function]') {
+                          if ({}.toString.call(item.hintCustom) === "[object Function]") {
                             const editorElement = vditor[vditor.currentMode].element;
                             const textareaPosition = getCursorPosition(editorElement);
                             item.hintCustom(key, textareaPosition, this.lastIndex);

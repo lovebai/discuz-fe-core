@@ -1,13 +1,13 @@
 import {Constants} from "../constants";
 import {removeCurrentToolbar} from "../toolbar/setToolbar";
 import {listToggle} from "../util/fixBrowserBehavior";
+import { getSelectText } from "../util/getSelectText";
 import {hasClosestBlock, hasClosestByMatchTag} from "../util/hasClosest";
 import {processCodeRender} from "../util/processCode";
 import {getEditorRange, setRangeByWbr, setSelectionFocus} from "../util/selection";
 import {afterRenderEvent} from "./afterRenderEvent";
 import {genAPopover, highlightToolbarWYSIWYG} from "./highlightToolbarWYSIWYG";
 import {getNextHTML, getPreviousHTML, splitElement} from "./inlineTag";
-import { getSelectText } from "../util/getSelectText";
 
 const cancelBES = (range: Range, vditor: IVditor, commandName: string) => {
     let element = range.startContainer.parentElement;
@@ -325,7 +325,7 @@ export const toolbarEvent = (vditor: IVditor, actionBtn: Element, event: Event) 
     }
 
     // 当渲染完成之后删除选取
-    if (getSelectText(vditor[vditor.currentMode].element)) getSelection().removeAllRanges();
+    if (getSelectText(vditor[vditor.currentMode].element)) { getSelection().removeAllRanges(); }
     vditor.bubbleToolbar.hide();
     if (useHighlight) {
         highlightToolbarWYSIWYG(vditor);

@@ -608,7 +608,7 @@ interface IVditor {
         bubbleToolbarTimeoutId?: number, // 气泡工具栏定时器id
         show?: Function,
         hide?: Function,
-    }
+    };
     toolbar?: {
         elements?: { [key: string]: HTMLElement },
         element?: HTMLElement,

@@ -16,6 +16,7 @@ import {Editor} from "./ts/sv/index";
 import {inputEvent} from "./ts/sv/inputEvent";
 import {processAfterRender as processSVAfterRender} from "./ts/sv/process";
 import {Tip} from "./ts/tip";
+import { BubbleToolbar } from "./ts/toolbar/bubble";
 import {Toolbar} from "./ts/toolbar/index";
 import {disableToolbar, hidePanel} from "./ts/toolbar/setToolbar";
 import {enableToolbar} from "./ts/toolbar/setToolbar";
@@ -35,7 +36,6 @@ import {WYSIWYG} from "./ts/wysiwyg";
 import {afterRenderEvent} from "./ts/wysiwyg/afterRenderEvent";
 import {input} from "./ts/wysiwyg/input";
 import { renderDomByMd } from "./ts/wysiwyg/renderDomByMd";
-import { BubbleToolbar } from './ts/toolbar/bubble';
 
 class Vditor extends VditorMethod {
 
@@ -279,20 +279,20 @@ class Vditor extends VditorMethod {
 
     /** 在焦点处插入内容，并默认进行 Markdown 渲染 */
   public insertValue(value: string, render = true) {
-      let range = getEditorRange(this.vditor);
-        range.collapse(true);
-        const tmpElement = document.createElement("template");
-        tmpElement.innerHTML = value;
-        range.insertNode(tmpElement.content.cloneNode(true));
-        if (this.vditor.currentMode === "sv") {
+      const range = getEditorRange(this.vditor);
+      range.collapse(true);
+      const tmpElement = document.createElement("template");
+      tmpElement.innerHTML = value;
+      range.insertNode(tmpElement.content.cloneNode(true));
+      if (this.vditor.currentMode === "sv") {
             this.vditor.sv.preventInput = true;
             if (render) {
                 inputEvent(this.vditor);
             }
         } else if (this.vditor.currentMode === "wysiwyg") {
             this.vditor.wysiwyg.preventInput = true;
-          if (render) {
-            input(this.vditor, range, { inputType: 'insertValue' }, value);
+            if (render) {
+            input(this.vditor, range, { inputType: "insertValue" }, value);
             // input(this.vditor, getSelection().getRangeAt(0));
           }
         } else if (this.vditor.currentMode === "ir") {

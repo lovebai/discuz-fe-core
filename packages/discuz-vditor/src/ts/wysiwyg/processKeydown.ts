@@ -239,7 +239,7 @@ export const processKeydown = (vditor: IVditor, event: KeyboardEvent) => {
     }
 
     // shift+enter：软换行，但 table/hr/heading 处理、cell 内换行、block render 换行处理单独写在上面，li & p 使用浏览器默认
-      if ((!isCtrl(event) && event.shiftKey && !event.altKey && event.key === "Enter" &&
+    if ((!isCtrl(event) && event.shiftKey && !event.altKey && event.key === "Enter" &&
         startContainer.parentElement.tagName !== "LI" && startContainer.parentElement.tagName !== "P")
       || (event.key === "Enter" &&  ["P", "STRONG", "STRIKE", "S", "I", "EM", "B"].indexOf(startContainer.parentElement.tagName) !== -1)) {
         if (["STRONG", "STRIKE", "S", "I", "EM", "B"].includes(startContainer.parentElement.tagName)) {

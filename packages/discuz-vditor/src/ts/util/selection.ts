@@ -191,22 +191,22 @@ export const setRangeByWbr = (element: HTMLElement, range: Range, event?: Insert
         return;
     }
 
-  if (event && event.inputType === 'insertValue') {
+    if (event && event.inputType === "insertValue") {
     if (wbrElement.nextSibling) {
         if (wbrElement.nextSibling.nodeType === 3) {
             // <wbr>text
           // 如果是insertValue插入事件
-          if (event && event.inputType === 'insertValue') {
+          if (event && event.inputType === "insertValue") {
             // 这里的计算其实有问题的，暂时这样处理
             const text = wbrElement.nextSibling.textContent;
-            const reInsertValue = insertValue?.replace(/<[^>]+>/g, '').replace(/\n$/, '').replace(/&nbsp;/g, ' ');
+            const reInsertValue = insertValue?.replace(/<[^>]+>/g, "").replace(/\n$/, "").replace(/&nbsp;/g, " ");
             // 如果相等，说明在末尾，直接使用本身的内容长度
             if (text === reInsertValue || text.length < reInsertValue.length) {
               range.setStart(wbrElement.nextSibling, wbrElement.nextSibling.textContent.length);
             } else {
               range.setStart(wbrElement.nextSibling, reInsertValue.length);
             }
-          } else range.setStart(wbrElement.nextSibling, 0);
+          } else { range.setStart(wbrElement.nextSibling, 0); }
         } else {
             // <wbr><br> https://github.com/Vanessa219/vditor/issues/400
             range.setStartAfter(wbrElement.nextSibling);

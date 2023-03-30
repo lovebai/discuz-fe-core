@@ -151,7 +151,7 @@ export class Options {
             if (this.options.bubbleToolbar) {
               this.options.bubbleToolbar = this.mergeToolbar(this.options.bubbleToolbar);
             } else {
-              this.options.bubbleToolbar = this.mergeToolbar(this.defaultOptions.bubbleToolbar)
+              this.options.bubbleToolbar = this.mergeToolbar(this.defaultOptions.bubbleToolbar);
             }
             if (this.options.preview?.theme?.list) {
                 this.defaultOptions.preview.theme.list = this.options.preview.theme.list;

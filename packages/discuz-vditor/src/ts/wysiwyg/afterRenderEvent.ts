@@ -5,7 +5,7 @@ export const afterRenderEvent = (vditor: IVditor, options = {
     enableAddUndoStack: true,
     enableHint: false,
     enableInput: true,
-}, event?: Event | InsertValueEvent | InputEvent) => {
+},                               event?: Event | InsertValueEvent | InputEvent) => {
 
     if (options.enableHint) {
         vditor.hint.render(vditor);

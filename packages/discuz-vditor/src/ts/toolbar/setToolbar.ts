@@ -86,7 +86,7 @@ export const hidePanel = (vditor: IVditor, panels: string[], exceptElement?: HTM
     }
     if (panels.includes("hint")) {
         vditor.hint.element.style.display = "none";
-        if ({}.toString.call(vditor.options.hint.hide) === '[object Function]') vditor.options.hint.hide();
+        if ({}.toString.call(vditor.options.hint.hide) === "[object Function]") { vditor.options.hint.hide(); }
     }
     if (vditor.wysiwyg.popover && panels.includes("popover")) {
         vditor.wysiwyg.popover.style.display = "none";
