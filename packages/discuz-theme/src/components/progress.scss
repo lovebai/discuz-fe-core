@@ -136,19 +136,24 @@ $progress-circle-height: 160px;
 
 .#{$namespace}-progress-circle__current-text {
   // font-family: qcloud-num;
-  height: $progress-circle-height*50/160;
-  line-height: $progress-circle-height*50/160;
-  font-size: $progress-circle-height*48/160;
+  height: calc($progress-circle-height * 50/160);
+  line-height: calc($progress-circle-height * 50 /160);
+  font-size: calc($progress-circle-height * 48 / 160);
+  // height: $progress-circle-height*50/160;
+  // line-height: $progress-circle-height*50/160;
+  // font-size: $progress-circle-height*48/160;
   color: $progress-color-base-text-weight;
   position: absolute;
   left: 0;
   right: 0;
   top: 50%;
-  margin-top: -($progress-circle-height*50/160)/2;
+  // margin-top: -($progress-circle-height*50/160)/2;
+  margin-top: calc(-1 * ($progress-circle-height * 50 / 160) / 2);
 }
 
 .#{$namespace}-progress-circle__current-text .text--chinese {
-  font-size: $progress-circle-height*24/160;
+  // font-size: $progress-circle-height*24/160;
+  font-size: calc($progress-circle-height * 24 / 160);
   display: inline-block;
   vertical-align: top;
 }
