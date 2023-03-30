@@ -1,6 +1,6 @@
 {
   "name": "@discuzqfe/theme",
-  "version": "1.0.32",
+  "version": "1.0.33",
   "description": "Discuz! Q 公共样式库",
   "main": "dist/index.css",
   "style": "dist/index.css",
