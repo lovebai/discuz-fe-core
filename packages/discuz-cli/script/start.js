@@ -8,7 +8,7 @@ const {
   MS_SERVER_START,
   ENV_PROD,
   MS_NOT_FIND_NEXT_COMMAND,
-  PLATFORM_WEB
+  PLATFORM_WEB,
 } = require('../constants');
 // eslint-disable-next-line no-unused-vars
 function startProject(options) {

@@ -79,5 +79,5 @@ module.exports = {
   PLUGIN_IMPORT: '开始加载私有插件...',
   PLUGIN_IMPORT_SUCCESS: '加载私有插件成功！',
   PLUGIN_IMPORT_ERROR: '加载私有插件失败！',
-  
+
 };

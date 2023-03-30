@@ -1,27 +1,27 @@
 'use strict';
-const os = require( 'os' );
+const os = require('os');
 const path = require('path');
-const babelConfig = require( '../createBabelConfig' );
-const createTerserPlugin = require( '../createTerserPlugin' );
+const babelConfig = require('../createBabelConfig');
+const createTerserPlugin = require('../createTerserPlugin');
 
-module.exports = ( config ) => {
+module.exports = (config) => {
   const { module, optimization } = config;
   const { rules } = module;
 
   // babel
-  rules.push( {
+  rules.push({
     test: /\.(js|jsx|mjs)$/,
     include: [
       // /node_modules\/\@discuzqfe\/design/,
-      path.resolve(process.cwd(), 'src')
+      path.resolve(process.cwd(), 'src'),
     ],
     use: [
       {
-        loader: require.resolve( 'babel-loader' ),
-        options: babelConfig( config, 'webpack' ),
-      }
-    ]
-  } );
+        loader: require.resolve('babel-loader'),
+        options: babelConfig(config, 'webpack'),
+      },
+    ],
+  });
 
   // js代码压缩
   // optimization.minimize = config.mode == 'production';
@@ -30,4 +30,4 @@ module.exports = ( config ) => {
   // }
 
   return config;
-}
+};

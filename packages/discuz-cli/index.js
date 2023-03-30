@@ -9,7 +9,7 @@ const sls = require('./script/sls');
 const build = require('./script/build');
 const start = require('./script/start');
 const update = require('./script/update');
-const plugin = require('./script/plugin')
+const plugin = require('./script/plugin');
 
 const program = new commander.Command();
 
@@ -59,7 +59,7 @@ program
   .addOption(new commander.Option('-t, --type <typeName>', `dev type, ${AVAILABLE_TYPES.join(',')}, but project must mini project!`)
     .default(AVAILABLE_TYPES[0])
     .choices(AVAILABLE_TYPES))
-  .option('-plugin, --plugin <pluginPath>', 'private plugin dir', '')  
+  .option('-plugin, --plugin <pluginPath>', 'private plugin dir', '')
   .option('-port, --port <port>', 'A port number on which to start the application', '3000')
   .option('-H, --hostname <hostname>', 'Hostname on which to start the application (default: 0.0.0.0)', '0.0.0.0')
   .description('develop dzq project')
@@ -82,7 +82,7 @@ program
   .addOption(new commander.Option('-t, --type <typeName>', `dev type, ${AVAILABLE_TYPES.join(',')}, but project must mini project!`)
     .default(AVAILABLE_TYPES[0])
     .choices(AVAILABLE_TYPES))
-  .option('-plugin, --plugin <pluginPath>', 'private plugin dir', '') 
+  .option('-plugin, --plugin <pluginPath>', 'private plugin dir', '')
   .option('-s, --staticSite', 'export the static site project', false)
   .description('build dzq project')
   .action(async (options) => {
@@ -113,44 +113,43 @@ program
     }
   });
 
-  program
-    .command('sls')
-    .option('--no-create', 'no create serverless project')
-    .option('-z, --zip', 'zip serverless project', false)
-    .option('-c, --cos', 'upload zip file to cos', false)
-    .description('dzq SSR serverless build')
-    .action(async (options) => {
-      const result = await sls(options);
-      if (result) {
-        commandDone('ok', 'dzq SSR serverless build success!');
-        process.exit(0);
-      } else {
-        commandDone('err', 'dzq SSR serverless build error!');
-        process.exit(1);
-      }
-    });
+program
+  .command('sls')
+  .option('--no-create', 'no create serverless project')
+  .option('-z, --zip', 'zip serverless project', false)
+  .option('-c, --cos', 'upload zip file to cos', false)
+  .description('dzq SSR serverless build')
+  .action(async (options) => {
+    const result = await sls(options);
+    if (result) {
+      commandDone('ok', 'dzq SSR serverless build success!');
+      process.exit(0);
+    } else {
+      commandDone('err', 'dzq SSR serverless build error!');
+      process.exit(1);
+    }
+  });
 
 
-  program
-    .command('plugin')
-    .option('-b, --build', 'build plugin component', true)
-    .option('-p, --publish', 'publish plugin component', false)
-    .option('-w, --watch', 'watch plugin component', false)
-    .option('-s, --server', 'watch plugin component open server', false)
-    .option('-a, --analyzer', 'open the analyzer', false)
-    .option('-i, --init', 'init your plugin project', false)
-    .description('dzq develop plugin command')
-    .action(async (options) => {
-      const result = await plugin(options);
-      if (result) {
-        commandDone('ok', 'dzq develop plugin command success!');
-        process.exit(0);
-      } else {
-        commandDone('err', 'dzq develop plugin command error!');
-        process.exit(1);
-      }
-    });
-
+program
+  .command('plugin')
+  .option('-b, --build', 'build plugin component', true)
+  .option('-p, --publish', 'publish plugin component', false)
+  .option('-w, --watch', 'watch plugin component', false)
+  .option('-s, --server', 'watch plugin component open server', false)
+  .option('-a, --analyzer', 'open the analyzer', false)
+  .option('-i, --init', 'init your plugin project', false)
+  .description('dzq develop plugin command')
+  .action(async (options) => {
+    const result = await plugin(options);
+    if (result) {
+      commandDone('ok', 'dzq develop plugin command success!');
+      process.exit(0);
+    } else {
+      commandDone('err', 'dzq develop plugin command error!');
+      process.exit(1);
+    }
+  });
 
 
 const { argv } = process;

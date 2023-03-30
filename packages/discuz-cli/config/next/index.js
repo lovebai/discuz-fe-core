@@ -12,7 +12,7 @@ module.exports = (fn) => {
   const baseConfig = getBaseConfig();
   const cwd = getCurrPath();
   baseConfig.webpack = (config, options) => {
-    let nextConfig = config; 
+    let nextConfig = config;
 
     // javascript配置
     nextConfig = scriptConfig(nextConfig, options);
@@ -28,7 +28,7 @@ module.exports = (fn) => {
     nextConfig = setModules(nextConfig);
 
     if (nextConfig.mode === 'production') {
-      nextConfig.resolve.alias['mobx'] = path.resolve(cwd, './node_modules/mobx/lib/mobx.umd.min.js');
+      nextConfig.resolve.alias.mobx = path.resolve(cwd, './node_modules/mobx/lib/mobx.umd.min.js');
       nextConfig.resolve.alias['mobx-react'] = path.resolve(cwd, './node_modules/mobx-react/dist/mobx-react.umd.js');
       nextConfig.resolve.alias['mobx-react-lite'] = path.resolve(cwd, './node_modules/mobx-react-lite/dist/index.min.js');
     }
@@ -61,8 +61,8 @@ module.exports = (fn) => {
     // nextConfig.resolve.alias['mobx'] = path.resolve(cwd, './node_modules/mobx/lib/mobx.umd.min.js');
     // nextConfig.resolve.alias['mobx-react'] = path.resolve(cwd, './node_modules/mobx-react/dist/mobx-react.umd.js');
     // nextConfig.resolve.alias['mobx-react-lite'] = path.resolve(cwd, './node_modules/mobx-react-lite/dist/index.min.js');
-    
-    
+
+
     return nextConfig;
   };
 

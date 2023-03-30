@@ -12,7 +12,7 @@ module.exports = (config, options) => {
     include: [
       path.resolve(cwd),
       path.resolve(cwd, 'node_modules/@discuzqfe/plugin-center'),
-      path.resolve(cwd, '../common')
+      path.resolve(cwd, '../common'),
     ],
     use: [
       {
@@ -29,7 +29,7 @@ module.exports = (config, options) => {
     test: /\.(tsx|ts|js|mjs|jsx)$/,
     include: [
       path.resolve(cwd, 'node_modules/@discuzqfe/plugin-center'),
-      path.resolve(cwd, '../common')
+      path.resolve(cwd, '../common'),
     ],
     use: options.defaultLoaders.script,
   });

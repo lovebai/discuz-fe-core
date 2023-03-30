@@ -43,7 +43,7 @@ function devProject(options) {
     const miniPluginPath = plugin && plugin !== '' ? plugin : process.env.DISCUZ_MINI_PLUGIN || null;
 
     // 只有小程序才会读取自定义的插件目录
-    if ( miniPluginPath && miniPluginPath !== 0 && platform === PLATFORM_MINI) {
+    if (miniPluginPath && miniPluginPath !== 0 && platform === PLATFORM_MINI) {
       infolog(PLUGIN_IMPORT);
       const res = await importPlugin(miniPluginPath);
       if (res) {
@@ -63,7 +63,7 @@ function devProject(options) {
 
     // 读取配置yaml，修改appid
     const yamlConfig = getProjectConfigYaml(CURR_RUN_PATH);
-    if ( yamlConfig && yamlConfig.APPID && yamlConfig.APPID !== '' ) {
+    if (yamlConfig && yamlConfig.APPID && yamlConfig.APPID !== '') {
       setTaroProjectConfig(CURR_RUN_PATH, yamlConfig.APPID);
     }
 
@@ -71,12 +71,11 @@ function devProject(options) {
 
     // 小程序新增页面插件处理
     const res = miniPagePlugin(yamlConfig, true);// 暂时dev也统计
-    if ( !res ) {
+    if (!res) {
       resolve(false);
     }
     resolve(runTaroCommand(ENV_DEV, CURR_RUN_PATH, { type }));
-  })
-
+  });
 }
 
 module.exports = devProject;

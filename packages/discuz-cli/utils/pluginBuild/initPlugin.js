@@ -20,7 +20,7 @@ module.exports = async function initPlugin() {
     status: 1,
     filter_enable: false,
     author: {},
-    busi: "",
+    busi: '',
     view: {
       YourPlugin: {
         target: '请填写使用的target',

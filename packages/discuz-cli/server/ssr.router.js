@@ -21,7 +21,7 @@ module.exports = (nextApp, handle) => {
     global.dzq_host = process.env.DZQ_SSR_HOST;
 
     // ssr生产环境暂时使用html输出
-    if ( process.env.NODE_ENV === 'development' ) {
+    if (process.env.NODE_ENV === 'development') {
       await nextApp.render(ctx.req, ctx.res, pathname, query);
       ctx.respond = false;
     } else {

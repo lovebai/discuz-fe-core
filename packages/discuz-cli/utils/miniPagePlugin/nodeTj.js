@@ -2,23 +2,23 @@
 
 module.exports = function nodeTj(allPlugin, host) {
 
-//   Beacon.init('0NODEXPZ4M4H7A3J', {
-//     enableDebug: false,
-//     versionCode: '1.4.22'
-//   });
+  //   Beacon.init('0NODEXPZ4M4H7A3J', {
+  //     enableDebug: false,
+  //     versionCode: '1.4.22'
+  //   });
 
-// //   Beacon.addInterceptor({
-// //     onAddEvent: (event, overview) => {
-// //       console.log('Event added ', event.name)
-// //       event.addParam('key', 'value')
-// //     },
-// //     onSendSuccess: (eventList) => {
-// //       console.log('onSendSuccess 2 ', eventList.length)
-// //     },
-// //     onSendFail: (eventList, error) => {
-// //       console.log('onSendFail ', eventList.length, error)
-// //     }
-// //   })
+  // //   Beacon.addInterceptor({
+  // //     onAddEvent: (event, overview) => {
+  // //       console.log('Event added ', event.name)
+  // //       event.addParam('key', 'value')
+  // //     },
+  // //     onSendSuccess: (eventList) => {
+  // //       console.log('onSendSuccess 2 ', eventList.length)
+  // //     },
+  // //     onSendFail: (eventList, error) => {
+  // //       console.log('onSendFail ', eventList.length, error)
+  // //     }
+  // //   })
 
 //   for ( let key in allPlugin ) {
 //     const target = allPlugin[key];
@@ -46,4 +46,4 @@ module.exports = function nodeTj(allPlugin, host) {
 //       }
 //     }
 //   }
-}
+};

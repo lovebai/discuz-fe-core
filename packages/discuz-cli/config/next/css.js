@@ -50,7 +50,7 @@ module.exports = (config, options) => {
       chunkFilename: options.dev
         ? 'static/css/[name].chunk.css'
         : 'static/css/[name].[contenthash:8].chunk.css',
-      ignoreOrder: true
+      ignoreOrder: true,
     }));
   }
 

@@ -8,5 +8,5 @@ module.exports = options => new Promise((res) => {
   const baseConfig = getBaseConfig(cwd);
   const nextConfig = getNextConfig(cwd);
   if (nextConfig) debug(MS_NOT_FIND_NEXT_CONFIG);
-  res(Object.assign({}, getRuntimeConfig, { conf: Object.assign({}, baseConfig, nextConfig ), dev: env !== ENV_PROD }));
+  res(Object.assign({}, getRuntimeConfig, { conf: Object.assign({}, baseConfig, nextConfig), dev: env !== ENV_PROD }));
 });

@@ -24,7 +24,7 @@ module.exports = (ssr, hostname, port, config) => {
       const router = getSSRRouter(nextApp, handle);
 
       app
-        .use(serve(getCurrPath() + '/public'))
+        .use(serve(`${getCurrPath()}/public`))
         .use(async (ctx, next) => {
         // eslint-disable-next-line no-param-reassign
           ctx.res.statusCode = 200;
@@ -33,19 +33,18 @@ module.exports = (ssr, hostname, port, config) => {
         // 心跳检测不走入next
         .use(async (ctx, next) => {
           // eslint-disable-next-line no-param-reassign
-            // ctx.res.statusCode = 200;
-            const { headers } = ctx.req;
-            if ( headers['user-agent'] === 'clb-healthcheck' ) {
-              ctx.res.statusCode = 200;
-              ctx.body = {
-                msg: '心跳检测反馈',
-                data: {},
-                code: 0
-              }
-            } else {
-                await next();
-            }
-            
+          // ctx.res.statusCode = 200;
+          const { headers } = ctx.req;
+          if (headers['user-agent'] === 'clb-healthcheck') {
+            ctx.res.statusCode = 200;
+            ctx.body = {
+              msg: '心跳检测反馈',
+              data: {},
+              code: 0,
+            };
+          } else {
+            await next();
+          }
         })
         .use(async (ctx, next) => {
           // console.log(process.env.DZQ_SSR_HOST);
@@ -62,25 +61,23 @@ module.exports = (ssr, hostname, port, config) => {
           });
 
           await next();
-          if ( !url.startsWith('/api') && !url.startsWith('/plugin') && !url.startsWith('/_next/static')) {
+          if (!url.startsWith('/api') && !url.startsWith('/plugin') && !url.startsWith('/_next/static')) {
             clsLog.console({
               LOG_TYPE: 'page',
               LOG_PAGE_STATUS: ctx.res.statusCode,
-              LOG_PAGE_LENGTH: ctx.body ? ctx.body.length : 0
+              LOG_PAGE_LENGTH: ctx.body ? ctx.body.length : 0,
             });
           }
         })
         .use(async (ctx, next) => {
           const url = ctx.path;
-          if ( process.env.DZQ_SSR_HOST && (url.startsWith('/api') || url.startsWith('/plugin')) ) {
+          if (process.env.DZQ_SSR_HOST && (url.startsWith('/api') || url.startsWith('/plugin'))) {
             ctx.respond = false;
-            await k2c(
-              createProxyMiddleware({
-                target: process.env.DZQ_SSR_HOST || '',
-                changeOrigin: true,
-                secure: false,
-              }),
-            )(ctx, next);
+            await k2c(createProxyMiddleware({
+              target: process.env.DZQ_SSR_HOST || '',
+              changeOrigin: true,
+              secure: false,
+            }))(ctx, next);
           } else {
             await next();
           }
