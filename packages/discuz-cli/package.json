@@ -1,6 +1,6 @@
 {
   "name": "@discuzqfe/cli",
-  "version": "1.3.19",
+  "version": "1.3.20",
   "description": "> TODO: description",
   "author": "LLLLLamHo <linhao.4zhong@163com>",
   "homepage": "https://gitee.com/lovebai/discuz-fe-core",
@@ -16,10 +16,10 @@
     "type": "git",
     "url": "https://gitee.com/lovebai/discuz-fe-core"
   },
-    "publishConfig": {
-      "access": "public",
-      "registry": "https://registry.npmjs.org/"
-    },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "scripts": {
     "lint": "eslint -c .eslintrc.js ./ --ext .js,.jsx",
     "lint:fix": "eslint -c .eslintrc.js ./ --ext .js,.jsx --fix",
@@ -88,7 +88,7 @@
     "webpackbar": "5.0.0-3"
   },
   "devDependencies": {
-    "@tarojs/cli": "3.2.2",
+    "@tarojs/cli": "3.5.0",
     "@typescript-eslint/eslint-plugin": "4.14.0",
     "@typescript-eslint/parser": "4.14.0",
     "eslint": "7.19.0",
