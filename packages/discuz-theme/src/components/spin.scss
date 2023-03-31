@@ -19,7 +19,7 @@ $spin-text-margin: $margin-2n;
   @for $i from 1 to $spin-iteration {
     &:nth-child(#{$i}) {
       // transform: rotate(($i * (360deg / 12)));
-      transform: rotate(($i * (calc(360deg / 12))));
+      transform: rotate(calc(#{$i} * (360deg / 12)));
       animation-delay: $delay + $i * 0.1s;
     }
   }
