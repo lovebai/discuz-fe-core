@@ -36,31 +36,35 @@ const registerTask = (reportData) => {
   }
 };
 
-function initTj() {
-  if (
-    process.env.DISCUZ_ENV === "web" &&
-    process.env.NODE_ENV !== "development" &&
-    !isServer() &&
-    !window.BeaconAction
-  ) {
-    window.beaconIsLoading = true;
-    const tj = document.createElement("script");
-    tj.src = "https://beaconcdn.qq.com/sdk/4.3.4/beacon_web.min.js";
-    tj.onload = function () {
-      window.beaconUI = new BeaconAction({
-        appkey: "0WEB0U4I4M4V73SR", // 系统或项目id, 必填
-        delay: 3000,
-      });
-      window.beaconUI.addAdditionalParams({
-        host: window.location.host,
-        path: window.location.pathname,
-        pfm: browser.env("mobile") ? "h5" : "pc",
-      });
-      reportTaskList();
-    };
-    document.body.appendChild(tj);
-  }
+function initTj(){
+  //干干净净的才好嘛🤣
 }
+
+// function initTj() {
+//   if (
+//     process.env.DISCUZ_ENV === "web" &&
+//     process.env.NODE_ENV !== "development" &&
+//     !isServer() &&
+//     !window.BeaconAction
+//   ) {
+//     window.beaconIsLoading = true;
+//     const tj = document.createElement("script");
+//     tj.src = "https://beaconcdn.qq.com/sdk/4.3.4/beacon_web.min.js";
+//     tj.onload = function () {
+//       window.beaconUI = new BeaconAction({
+//         appkey: "0WEB0U4I4M4V73SR", // 系统或项目id, 必填
+//         delay: 3000,
+//       });
+//       window.beaconUI.addAdditionalParams({
+//         host: window.location.host,
+//         path: window.location.pathname,
+//         pfm: browser.env("mobile") ? "h5" : "pc",
+//       });
+//       reportTaskList();
+//     };
+//     document.body.appendChild(tj);
+//   }
+// }
 
 const report = ({ componentName, pa = "", pn = "" }) => {
   if (process.env.DISCUZ_ENV === "web") {
