@@ -23,7 +23,8 @@ export abstract class Constants {
         "dart", "erb", "go", "gradle", "julia", "kotlin", "less", "lua", "matlab", "rust", "scss", "typescript", "ts",
       "yaml"];
   // https://www.jsdelivr.com/package/npm/@discuzqfe/vditor 设置可以cdn的文件
-    public static readonly CDN = `https://cdn.jsdelivr.net/npm/@discuzqfe/vditor@${VDITOR_VERSION}`;
+    // public static readonly CDN = `https://cdn.jsdelivr.net/npm/@discuzqfe/vditor@${VDITOR_VERSION}`;
+    public static readonly CDN = `https://www.unpkg.com/@discuzqfe/vditor@${VDITOR_VERSION}`;
     public static readonly MARKDOWN_OPTIONS = {
         autoSpace: false,
         codeBlockPreview: true,
