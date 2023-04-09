@@ -2,6 +2,7 @@
 <p align="center">易用高效的Discuz!Q脚手架</p>
 
 ## 介绍
+
 dzq-cli是Discuz!Q的项目初始化工具以及构建集成工具。为用户集成了web端构建以及小程序多端同构的能力。并生成规范的模板，用于二次开发和深度开发使用。
 
 ## 依赖
@@ -10,11 +11,11 @@ dzq-cli是基于[Taro](https://taro-docs.jd.com/taro/docs/README)和[Next](https
 
 一般情况下，不需要关注Taro和Next的使用，因为dzq-cli已经对两个工具进行了上层封装，通过调用dzq-cli提供的命令即可进行对Taro和Next的能力的调用。如果需要对Taro和Next进行自定义的封装，那么可以查看相关文档。
 
-| 依赖库 | 版本 | 
-|  ----  | ----  |
-| React | 17.0.1 | 
-| Next | 10.0.7 | 
-| Taro | 3.0.27 | 
+| 依赖库 | 版本   |
+| ------ | ------ |
+| React  | 17.0.1 |
+| Next   | 10.0.7 |
+| Taro   | 3.5.0  |
 
 ## 安装
 
@@ -22,7 +23,6 @@ dzq-cli是基于[Taro](https://taro-docs.jd.com/taro/docs/README)和[Next](https
 npm install @discuzqfe/cli -g
 ```
 
-## 
-
 <!--<ComponentTOC>-->
+
 <!--</ComponentTOC>-->
